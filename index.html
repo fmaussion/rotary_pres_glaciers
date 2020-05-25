@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="css/theme/white.css">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<!-- Custom img list -->
+		<link rel="stylesheet" href="css/imgclick.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -46,11 +48,250 @@
 
 				<section>
 
-					<h3>Girls on Ice</h3>
+				<h3>Questions for today</h3>
+
+				<ul>
+				<li class="fragment"> How do glaciers react to climate change? </li>
+				<li class="fragment"> What are the consequences of glacier retreat? </li>
+				<li class="fragment"> What is the influence of humans on glacier change? </li>
+				</ul>
+
+				</section>
+
+				<section>
+				<section>
+				<h3>The glaciers of the world</h3>
+				<a href="https://bokeh.oggm.org/explorer/app">
+					<img class="plain"  src="https://edu.oggm.org/en/latest/_images/explorer_thumbnail.png" width=75%/>
+				</a><br>
+
+				<div align="right">
+	      <font size="6">  	OGGM-Edu app: <a href="https://edu.oggm.org/en/latest/explorer.html">World Glaciers Explorer</a><br></font>
+        </div>
+				</section>
+
+				<section>
+					<h3>Take home: glacier explorer</h3>
+					<font size="6">
+					<ul>
+					<li> The <b>number</b> of glaciers is not relevant: their <b>volume</b> is.</li>
+					<li> 90% of total glacier volume is found in polar regions </li>
+					<li> The Alps contain 0.1% of total glacier ice (0.3 mm s.l.e) </li>
+					<li> If all glaciers were to melt, the sea level would rise of about <b>0.3 m</b> <br><em>For comparison: Greenland and
+Antarctic ice sheets: <b>6 and 60 m s.l.e!</b></em> </li>
+					</ul>
+				</font>
+				</section>
+
+				<section>
+
+				<b>However</b>, glaciers are the
+        <b>second contributor</b> to sea
+        level rise, and are likely to
+        continue in the 21st
+        century<br>
+				<img class="plain" src="img/IPCC_AR5_13.png" width=60%>
+
+				<div align="right">
+				<font size="2"> Source: <a href="https://www.ipcc.ch/report/ar5/wg1/">IPCC AR5</a>.</font>
+				</div>
+				</section>
+
+				</section>
+ 			 				<section>
+ 									<h3>Glaciers as geohazards</h3>
+
+									<img class="plain" src="img/lake.jpg" width=60%>
+
+									<div align="right">
+									<font size="2">Tsho Rolpa Glacial Lake. Source: <a href="https://www.eorc.jaxa.jp">JAXA</a>.</font>
+									</div>
+							</section>
+			 			 	<section>
+			 									<h3>Glaciers as icons of climate change</h3>
+
+												<img class="plain" src="img/rhone.jpg" width=100%>
+
+												<div align="right">
+												<font size="2">Rhone Glacier, 1900 and 2008. Source: <a href="http://www.swisseduc.ch">swisseduc.ch</a>.</font>
+												</div>
+						   </section>
+
+				<section>
+				<section>
+
+						Glaciers and climate<br>
+
+					  <img src="img/intro/glacier_01.png" width=75% name="ClickImage" border=0 style="border:0; text-decoration:none; outline:none">
+
+						<div align="right">
+						<font size="2"> Click on the image to advance. Source: <a href="https://edu.oggm.org">OGGM-Edu</a>.</font>
+						</div>
+
+		        <script>
+
+				    		//Declare an image array same as calling new Array();
+						    var img = []
+						    img[0] = "img/intro/glacier_01.png";
+						    img[1] = "img/intro/glacier_02.png";
+						    img[2] = "img/intro/glacier_03.png";
+						    img[3] = "img/intro/glacier_04.png";
+						    img[4] = "img/intro/glacier_05.png";
+						    img[5] = "img/intro/glacier_06.png";
+						    img[6] = "img/intro/glacier_07.png";
+						    img[7] = "img/intro/glacier_08.png";
+						    img[8] = "img/intro/glacier_09.png";
+						    img[9] = "img/intro/glacier_10.png";
+						    img[10] = "img/intro/glacier_11.png";
+
+						    //Select all elements on the page with the name attribute equal to VCRImage
+						    var images = document.querySelectorAll('[name=ClickImage]');
+
+						    //For each image bind the click event
+						    for(var i=0; i < images.length; i++)
+						    {
+						      var image = images[i];
+						      //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener
+						      image.addEventListener('click', imageClicked(), false);
+						    }
+
+						    function imageClicked()
+						    {
+						      //Use a closure to wrap the counter variable
+						      //so each image element has their own unique counter
+						      var counter = 0;
+						      return function(event)
+						      {
+						        //Increment counter
+						        counter++;
+						        //The context of "this" is the image element
+						        //Use a modulus
+						        this.src = img[counter % img.length];
+						      }
+						    }
+						</script>
+				</section>
+
+				<section>
+
+						Glacier response time<br>
+
+						<img class="plain" src="img/response/tau_04.png" width=100%>
+
+						<div align="right">
+						<font size="2"> Source: <a href="https://edu.oggm.org">OGGM-Edu</a>.</font>
+						</div>
+
+				</section>
+	    	</section>
+
+
+			 <section>
+			 				<section>
+
+									<h3>Glaciers as water "resources"</h3>
+
+			  	    </section>
+			 			 	<section>
+								<img class="plain" src="img/hh_1.png" width=70%>
+
+								<div align="right">
+								<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41558-017-0049-x">Huss & Hock (2018)</a></font>
+								</div>
+				  	  </section>
+			 			 	<section>
+								<img class="plain" src="img/hh_2.png" width=100%>
+
+								<div align="right">
+								<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41558-017-0049-x">Huss & Hock (2018)</a></font>
+								</div>
+				  	  </section>
+			 </section>
+			 			 <section>
+			 							<section>
+
+			 							<h3>Past glacier change</h3>
+
+										</section>
+
+										<section>
+										Regional glacier contributions to sea-level rise <br>
+
+										<img class="plain" src="img/zemp_1.png" width=80%>
+
+										<div align="right">
+										<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41586-019-1071-0">Zemp et al. (2019)</a></font>
+										</div>
+								 </section>
+										<section>
+
+											Global glacier contributions to sea-level rise <br> from 1961 to 2016 <br >
+
+											<img class="plain" src="img/zemp_2.png" width=60%>
+
+											<div align="right">
+											<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41586-019-1071-0">Zemp et al. (2019)</a></font>
+											</div>
+						 			 </section>
+									 <section>
+
+											Anthropogenic influence on glacier mass loss <br >
+
+											<img class="plain" src="img/bmscience.png" width=90%>
+
+											<div align="right">
+											<font size="2"> &#169; Science, <a href="https://science.sciencemag.org/content/345/6199/919">Marzeion et al. (2014)</a></font>
+											</div>
+									</section>
+						</section>
+
+			 <section>
+							<section>
+
+							<h3>Future glacier change</h3>
+
+							</section>
+							<section>
+
+								Committed mass loss
+
+								<img class="plain" src="img/marzeion_figure1.png" width=100%>
+
+								<div align="right">
+								<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41558-018-0093-1">Marzeion et al. (2018)</a></font>
+								</div>
+							</section>
+							<section>
+
+								Emissions <em>vs</em> mass loss
+
+								<img class="plain" src="img/marzeion_figure2.png" width=100%>
+
+								<div align="right">
+								<font size="2"> &#169; Nature, <a href="https://www.nature.com/articles/s41558-018-0093-1">Marzeion et al. (2018)</a></font>
+								</div>
+							</section>
+			 </section>
+
+			 <section>
+				 <h3>Take home: glacier change</h3>
+				 <font size="6">
+				 <ul>
+				 <li> Glaciers are melting worldwide (currently about 1 mm s.l.e per year)</li>
+				 <li> Human influence increases markedly the last decades</li>
+				 <li> Glaciers are not water "resources", they are <em>reservoirs</em>: their contribution to streamflow depends on region and time</li>
+				 <li> Even if we stop emissions <em>now</em>, 36% of glacier ice will continue to melt</li>
+				 <li> Choices we make <em>now</em> will affect future glacier change <br> (much less so for our future choices)</li>
+				 </ul>
+			 </font>
+			 </section>
+
+				<section>
+
 				<em>Empowering young women through science, art, <br> and wilderness exploration</em><br>
 
 				<a href="https://www.inspiringgirls.org">
-					<img class="plain"  src="img/logo_GoI.png" width=30%/>
+					<img class="plain"  src="img/logo_GoI.png" width=35%/>
 				</a><br>
 
 				Interested in supporting <a href="https://www.inspiringgirls.org/goi-austria"> Girls on Ice Austria?</a> <br>
