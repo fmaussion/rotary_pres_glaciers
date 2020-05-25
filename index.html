@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Global glacier change</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/blue_ice.jpg">
+					<h2>Global glacier change</h2>
+
+					<em>What are glaciers telling us about climate change?</em><br><br>
+
+		  		<img class="plain" src="img/logo_acinn.png" height=140vh align="middle">
+
+									<small>
+									  Rotary Club Innsbruck, 26.05.2020 <br> <br>
+									  <a href="http://fabienmaussion.info">Fabien Maussion</a> <br>
+									  <a href="https://www.uibk.ac.at/acinn">Department of Atmospheric and Cryospheric Sciences (ACINN)</a><br>
+									  <a href="http://uibk.ac.at">University of Innsbruck</a><br></td>
+									</small>
+
+				</section>
+
+				<section>
+
+					<h3>Girls on Ice</h3>
+				<em>Empowering young women through science, art, <br> and wilderness exploration</em><br>
+
+				<a href="https://www.inspiringgirls.org">
+					<img class="plain"  src="img/logo_GoI.png" width=30%/>
+				</a><br>
+
+				Interested in supporting <a href="https://www.inspiringgirls.org/goi-austria"> Girls on Ice Austria?</a> <br>
+
+				<small>Please talk to me after the presentation or contact <a href="austria@girlsonice.org">austria@girlsonice.org</a></small>
+				</section>
+
+		</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
